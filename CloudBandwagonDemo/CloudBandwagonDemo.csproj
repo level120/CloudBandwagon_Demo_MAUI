@@ -9,6 +9,7 @@
     <SingleProject>true</SingleProject>
     <ImplicitUsings>enable</ImplicitUsings>
     <EnableDefaultCssItems>false</EnableDefaultCssItems>
+    <PublishTrimmed>false</PublishTrimmed>
     <Authors>@level120</Authors>
     <Company>@level120</Company>
     <Copyright>@level120</Copyright>
