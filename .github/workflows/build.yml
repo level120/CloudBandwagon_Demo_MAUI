@@ -9,12 +9,12 @@ on:
 
 jobs:
   build:
-    name: Build - ${{ matrix.os }}(${{ matrix.configuration }})
+    name: ${{ matrix.os }}(${{ matrix.configuration }})
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, macos-latest]
-        configuration: ['Debug']
+        os: [windows-2022, macos-12]
+        configuration: ['Release']
 
     steps:
     - uses: actions/checkout@v2
