@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CloudBandwagonDemo.Pages.DesktopAppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CloudBandwagonDemo.Pages"
+    xmlns:viewModels="clr-namespace:CloudBandwagonDemo.ViewModels"
+    xmlns:locales="using:CloudBandwagonDemo.Resources.Locales"
+    x:DataType="viewModels:ShellViewModel"
+    FlyoutBehavior="Locked"
+    Title="{x:Static locales:Labels.ProgramName}">
+
+    <Shell.FlyoutHeader>
+        <Grid>
+            <Image Source="cloud_bandwagon.png"
+                   SemanticProperties.Description="Cloud Bandwagon logo"
+                   WidthRequest="230"
+                   HeightRequest="102"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="{x:Static locales:Labels.Intro}"
+                Icon="symbol.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="{x:Static locales:Labels.DeviceInfo}"
+                Icon="symbol.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="{x:Static locales:Labels.GetCharacter}"
+                Icon="symbol.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
