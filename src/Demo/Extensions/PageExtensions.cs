@@ -17,6 +17,11 @@ namespace CloudBandwagonDemo.Extensions
             // Mobile Pages
             builder.Services.AddSingleton<MobileAppShell>();
 
+            // Common Pages.
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<DeviceInfoPage>();
+            builder.Services.AddSingleton<MyCharacterPage>();
+
             return builder;
         }
     }

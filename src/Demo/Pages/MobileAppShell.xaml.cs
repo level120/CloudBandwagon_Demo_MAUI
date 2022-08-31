@@ -8,6 +8,6 @@ public partial class MobileAppShell : Shell
     {
         InitializeComponent();
 
-        BindingContext = new ShellViewModel();
+        BindingContext = DependencyService.Get<ShellViewModel>();
     }
 }

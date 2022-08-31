@@ -8,6 +8,6 @@ public partial class DesktopAppShell : Shell
     {
         InitializeComponent();
 
-        BindingContext = new ShellViewModel();
+        BindingContext = DependencyService.Get<ShellViewModel>();
     }
 }
