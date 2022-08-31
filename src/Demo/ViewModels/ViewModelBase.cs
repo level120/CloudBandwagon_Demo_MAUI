@@ -28,7 +28,7 @@ public abstract class ViewModelBase : INotifyPropertyChanged
     /// <param name="value">value.</param>
     /// <param name="propertyName">property name.</param>
     /// <returns>Is set succeed.</returns>
-    protected bool SetField<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
+    protected bool SetProperty<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
     {
         if (EqualityComparer<T>.Default.Equals(field, value))
         {

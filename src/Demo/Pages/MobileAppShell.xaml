@@ -16,16 +16,16 @@
                           Route="MainPage" />
         </Tab>
 
-        <Tab Title="{x:Static locales:Labels.Intro}"
+        <Tab Title="{x:Static locales:Labels.DeviceInfo}"
              Icon="symbol.png">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"
-                          Route="MainPage" />
+            <ShellContent ContentTemplate="{DataTemplate local:DeviceInfoPage}"
+                          Route="DeviceInfoPage" />
         </Tab>
 
-        <Tab Title="{x:Static locales:Labels.Intro}"
+        <Tab Title="{x:Static locales:Labels.GetCharacter}"
              Icon="symbol.png">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"
-                          Route="MainPage" />
+            <ShellContent ContentTemplate="{DataTemplate local:MyCharacterPage}"
+                          Route="MyCharacterPage" />
         </Tab>
     </TabBar>
 

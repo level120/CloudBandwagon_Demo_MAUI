@@ -12,6 +12,9 @@ public static class ViewModelExtensions
     public static MauiAppBuilder ConfigureViewModels(this MauiAppBuilder builder)
     {
         builder.Services.AddSingleton<ShellViewModel>();
+        builder.Services.AddSingleton<MainPageViewModel>();
+        builder.Services.AddSingleton<DeviceInfoPageViewModel>();
+        builder.Services.AddSingleton<MyCharacterPageViewModel>();
 
         return builder;
     }

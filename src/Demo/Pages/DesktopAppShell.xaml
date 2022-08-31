@@ -32,16 +32,16 @@
     <FlyoutItem Title="{x:Static locales:Labels.DeviceInfo}"
                 Icon="symbol.png">
         <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"
-                          Route="MainPage" />
+            <ShellContent ContentTemplate="{DataTemplate local:DeviceInfoPage}"
+                          Route="DeviceInfoPage" />
         </Tab>
     </FlyoutItem>
 
     <FlyoutItem Title="{x:Static locales:Labels.GetCharacter}"
                 Icon="symbol.png">
         <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"
-                          Route="MainPage" />
+            <ShellContent ContentTemplate="{DataTemplate local:MyCharacterPage}"
+                          Route="MyCharacterPage" />
         </Tab>
     </FlyoutItem>
 

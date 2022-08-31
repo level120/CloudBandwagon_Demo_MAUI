@@ -1,8 +1,8 @@
 ﻿namespace CloudBandwagonDemo.ViewModels;
 
 /// <summary>
-/// Shell ViewModel.
+/// MainPage ViewModel.
 /// </summary>
-public class ShellViewModel : ViewModelBase
+public class MainPageViewModel : ViewModelBase
 {
 }
